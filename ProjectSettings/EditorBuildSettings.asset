@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Karting/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
+  - enabled: 0
+    path: Assets/Ezereal Assets/Ezereal Car Controller/Demo/URP/Ezereal Car Controller
+      (URP Demo Scene).unity
+    guid: 6a5388b0eb3952a48b3e2ee3856e23d4
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0b4d9f5bb975d436296676fe7d9c601f,
+      type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6b52113a8010d4e1a86edc8dc7b2f032,
       type: 2}
