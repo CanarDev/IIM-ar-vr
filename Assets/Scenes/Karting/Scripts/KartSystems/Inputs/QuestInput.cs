@@ -52,7 +52,7 @@ namespace KartGame.KartSystems
             if (rightController.isValid)
             {
                 rightController.TryGetFeatureValue(CommonUsages.triggerButton, out accelerate);
-                rightController.TryGetFeatureValue(CommonUsages.gripButton, out brake);
+                leftController.TryGetFeatureValue(CommonUsages.triggerButton, out brake);
             }
             
             return new InputData

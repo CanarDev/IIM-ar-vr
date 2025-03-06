@@ -76,6 +76,9 @@ namespace KartGame.KartSystems
         public float AirPercent    { get; private set; }
         public float GroundPercent { get; private set; }
 
+        // Propriété pour accéder à la liste des power-ups actifs
+        public List<StatPowerup> ActivePowerups => m_ActivePowerupList;
+
         public ArcadeKart.Stats baseStats = new ArcadeKart.Stats
         {
             TopSpeed            = 60f,
@@ -181,7 +184,38 @@ namespace KartGame.KartSystems
         bool m_HasCollision;
         bool m_InAir = false;
 
+        // Méthodes de gestion des power-ups
         public void AddPowerup(StatPowerup statPowerup) => m_ActivePowerupList.Add(statPowerup);
+        
+        // Méthode pour supprimer un power-up spécifique
+        public void RemovePowerup(StatPowerup powerup)
+        {
+            if (m_ActivePowerupList.Contains(powerup))
+            {
+                m_ActivePowerupList.Remove(powerup);
+                Debug.Log($"Power-up {powerup.PowerUpID} removed.");
+            }
+            else
+            {
+                Debug.LogWarning("Power-up not found.");
+            }
+        }
+
+        // Méthode pour supprimer un power-up par son ID
+        public void RemovePowerupById(string powerUpID)
+        {
+            StatPowerup powerupToRemove = m_ActivePowerupList.Find(powerup => powerup.PowerUpID == powerUpID);
+            if (powerupToRemove != null)
+            {
+                m_ActivePowerupList.Remove(powerupToRemove);
+                Debug.Log($"Power-up {powerUpID} removed.");
+            }
+            else
+            {
+                Debug.LogWarning($"Power-up with ID {powerUpID} not found.");
+            }
+        }
+        
         public void SetCanMove(bool move) => m_CanMove = move;
         public float GetMaxSpeed() => Mathf.Max(m_FinalStats.TopSpeed, m_FinalStats.ReverseSpeed);
 
