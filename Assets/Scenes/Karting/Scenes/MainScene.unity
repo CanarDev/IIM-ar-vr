@@ -3087,6 +3087,26 @@ PrefabInstance:
       propertyPath: quest3MinDynamicResolutionScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2483171112407822886, guid: f54012181eacade4ea242c65f804720f,
+        type: 3}
+      propertyPath: requestBodyTrackingPermissionOnStartup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112407822892, guid: f54012181eacade4ea242c65f804720f,
+        type: 3}
+      propertyPath: usePerEyeCameras
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112407822892, guid: f54012181eacade4ea242c65f804720f,
+        type: 3}
+      propertyPath: disableEyeAnchorCameras
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112407822892, guid: f54012181eacade4ea242c65f804720f,
+        type: 3}
+      propertyPath: useFixedUpdateForTracking
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2483171112463624112, guid: f54012181eacade4ea242c65f804720f,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3200,6 +3220,11 @@ PrefabInstance:
     - target: {fileID: 2585996563486958946, guid: f54012181eacade4ea242c65f804720f,
         type: 3}
       propertyPath: activateKeys.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585996563486958946, guid: f54012181eacade4ea242c65f804720f,
+        type: 3}
+      propertyPath: activateKeys.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2596355535389932892, guid: f54012181eacade4ea242c65f804720f,
@@ -14856,7 +14881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 777161550, guid: b26c4a65cf4c6475a92bfd03c2c3282b, type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 530548658944599566, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
@@ -14946,7 +14971,7 @@ PrefabInstance:
     - target: {fileID: 2427649610041428733, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2427649610041428734, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
@@ -14961,7 +14986,7 @@ PrefabInstance:
     - target: {fileID: 3878065802378232315, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4491261064573878959, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
@@ -14986,7 +15011,7 @@ PrefabInstance:
     - target: {fileID: 5095541819825275944, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6934670203731004115, guid: b26c4a65cf4c6475a92bfd03c2c3282b,
         type: 3}
@@ -19856,7 +19881,7 @@ Transform:
   m_GameObject: {fileID: 1207105314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.98891, y: 3.250001, z: -2.8944764}
+  m_LocalPosition: {x: 0.2818966, y: 2.9259405, z: 0.9785247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23786,7 +23811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb3a7afe8f9f4f43beef9833c87c544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carTransform: {fileID: 0}
+  carTransform: {fileID: 1304724376}
 --- !u!1001 &1604134371
 PrefabInstance:
   m_ObjectHideFlags: 0
